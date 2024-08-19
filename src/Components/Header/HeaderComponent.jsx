@@ -3,10 +3,10 @@
 function HeaderComponent () {
     return ( 
         <>
-            <h1>
-                Header
-            </h1>
-        
+            <img src='src\assets\Header.png'/>
+                <h1>
+                    Header
+                </h1>      
         </>
     );
 }
