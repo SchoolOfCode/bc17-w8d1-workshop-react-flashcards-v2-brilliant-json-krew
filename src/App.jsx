@@ -1,6 +1,6 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+// import reactLogo from "./assets/react.svg";
+// import viteLogo from "/vite.svg";
 import "./App.css";
 import HeaderComponent from "./Components/Header/HeaderComponent";
 import FlashcardsComponent from "./Components/Flashcards/FlashcardsComponent";
@@ -29,7 +29,7 @@ function App() {
   return (
     <>
       <HeaderComponent />
-      <FormComponent />
+      <FormComponent setFlashData={setFlashData} />
       <FlashcardsComponent flashData={flashData} />
       <CardComponent />
       <FooterComponent />

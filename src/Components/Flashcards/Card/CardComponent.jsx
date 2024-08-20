@@ -1,9 +1,9 @@
-function CardComponent() {
+function CardComponent({ flashcard }) {
+  if (!flashcard) return null;
   return (
     <>
-      {/* <h1>
-        {Question}: {Answer}
-      </h1> */}
+      <h1>{flashcard.Question}:</h1>
+      <p>{flashcard.Answer}</p>
     </>
   );
 }

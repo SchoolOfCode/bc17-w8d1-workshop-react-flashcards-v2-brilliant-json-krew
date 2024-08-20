@@ -3,10 +3,13 @@ import styles from "./Header.module.css";
 
 function HeaderComponent() {
   return (
-    <div className={styles.headerComponent}>
-      <img src={imgUrl} alt="React Logo" />
-      <h1>ReactFlashcards</h1>
-    </div>
+    <section className={styles.headerComponent}>
+      <article>
+        <img className={styles.imgStyle} src={imgUrl} alt="React Logo" />
+        <h1>React Flashcards</h1>
+        <p>🧠Expand Your React Knowledge. One Flashcard at a time! 🐌</p>
+      </article>
+    </section>
   );
 }
 

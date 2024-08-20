@@ -1,0 +1,15 @@
+.footerComponent {
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+.footerContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

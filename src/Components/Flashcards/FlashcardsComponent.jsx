@@ -1,21 +1,16 @@
 import CardComponent from "./Card/CardComponent";
+import styles from "./Flashcards.module.css";
 function FlashcardsComponent({ flashData }) {
   // const [flashcards, setFlashcards] = useState([])
 
   return (
-    <>
-      <h1>
-        {flashData.map((flashEach, index) => (
-          <CardComponent
-            key={index}
-            {...flashEach.Question}
-            {...flashEach.Answer}
-          />
+    <section className={styles.flashcardsComponent}>
+      <article>
+        {flashData.map((flashcard, index) => (
+          <CardComponent key={index} flashcard={flashcard} />
         ))}
-        {/* {Question}: {Answer} */}
-      </h1>
-      <CardComponent />
-    </>
+      </article>
+    </section>
   );
 }
 
