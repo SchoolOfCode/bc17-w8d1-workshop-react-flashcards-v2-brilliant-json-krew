@@ -29,7 +29,7 @@ function App() {
   return (
     <>
       <HeaderComponent />
-      <FormComponent setFlashData={setFlashData} />
+      <FormComponent setFlashData={setFlashData} flashData={flashData} />
       <FlashcardsComponent flashData={flashData} />
       <CardComponent />
       <FooterComponent />
